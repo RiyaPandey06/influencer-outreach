@@ -1,0 +1,90 @@
+# ============================================================
+# Campaign + pipeline configuration.  EDIT THE CAMPAIGN SECTION.
+# ============================================================
+campaign:
+  brand_name: "YourBrand"            # <-- replace with your brand
+  product: "our skincare and style range"   # <-- what you are offering
+  sender_name: "Alex from YourBrand" # <-- used to sign emails
+  sender_address: ""                 # optional postal address for the email footer (good practice / CAN-SPAM)
+  collab_types:
+    - "Barter collaboration"
+    - "Affiliate campaign"
+    - "UGC content creation"
+    - "Paid sponsorship"
+
+discovery:
+  platform: "YouTube"
+  target_in_range: 60          # keep searching until this many channels fall in the micro range
+  max_pages_per_query: 3       # each page = 1 search call = 100 quota units
+  region_code: null            # e.g. "IN", "US" or null for worldwide
+  relevance_language: null     # e.g. "en" or null
+  queries:
+    - "skincare routine"
+    - "makeup tutorial for beginners"
+    - "get ready with me"
+    - "outfit ideas"
+    - "thrift haul fashion"
+    - "fashion lookbook"
+    - "hair care routine"
+    - "everyday makeup look"
+    - "affordable fashion haul"
+    - "korean skincare review"
+    - "capsule wardrobe"
+    - "street style fashion vlog"
+    - "drugstore makeup review"
+    - "ethnic wear styling"
+    - "nail art tutorial"
+    - "styling tips for women"
+    - "mens fashion styling"
+    - "acne skincare journey"
+    - "jewellery styling"
+    - "beauty product review"
+
+collect:
+  recent_videos: 10            # videos sampled to compute engagement
+  min_videos_for_er: 3         # need at least this many videos with visible likes
+
+filter:
+  min_followers: 5000
+  max_followers: 100000
+  min_engagement_pct: 2.0      # avg (likes+comments)/views over recent videos
+  max_days_since_upload: 90
+  target_group_label: "Fashion & Beauty"
+  target_categories: [fashion, beauty]
+  min_niche_keywords: 4        # distinct target keywords across the whole profile text
+  min_content_matches: 2       # distinct target keywords inside recent video titles/tags
+  allowed_countries: []        # e.g. ["IN","US"]; empty = any country
+  require_known_country: false # if true, channels without a country fail when allowed_countries is set
+  negative_keywords: ["casino", "gambling", "betting", "nsfw", "18+", "adult content", "forex signals", "get rich quick"]
+
+# Keyword dictionaries used for niche classification.  Add a category to support a new niche.
+categories:
+  fashion: ["fashion", "outfit", "outfits", "ootd", "lookbook", "styling", "style tips", "wardrobe", "thrift", "thrifting", "streetwear", "haul", "capsule wardrobe", "saree", "ethnic wear", "kurti", "jewellery", "jewelry", "accessories", "sneakers", "denim", "style"]
+  beauty: ["beauty", "makeup", "skincare", "skin care", "routine", "grwm", "get ready with me", "foundation", "lipstick", "serum", "moisturizer", "sunscreen", "haircare", "hair care", "hairstyle", "nail art", "eyeshadow", "concealer", "cosmetics", "glow"]
+  fitness: ["workout", "gym", "fitness", "exercise", "weight loss", "yoga", "bodybuilding", "protein", "cardio", "training"]
+  technology: ["tech", "smartphone", "laptop", "gadget", "unboxing", "review", "android", "iphone", "coding", "programming", "software"]
+  gaming: ["gameplay", "gaming", "walkthrough", "minecraft", "fortnite", "valorant", "let's play", "esports", "gamer", "pubg"]
+  fintech: ["investing", "stock market", "mutual fund", "personal finance", "credit card", "trading", "savings", "budgeting", "fintech"]
+  parenting: ["parenting", "toddler", "newborn", "baby", "motherhood", "pregnancy", "kids activities"]
+  crypto: ["crypto", "bitcoin", "ethereum", "blockchain", "defi", "altcoin"]
+
+# Sub-themes reported as "Content Themes" (matched against recent video titles + description)
+themes:
+  skincare: ["skincare", "skin care", "serum", "moisturizer", "sunscreen", "acne"]
+  makeup: ["makeup", "foundation", "lipstick", "eyeshadow", "concealer", "grwm", "get ready with me"]
+  haircare: ["hair", "haircare", "hairstyle", "curls"]
+  nails: ["nail", "nails", "nail art"]
+  outfit styling: ["outfit", "outfits", "ootd", "styling", "lookbook", "wardrobe"]
+  thrift & budget fashion: ["thrift", "thrifting", "affordable", "budget", "haul"]
+  ethnic & traditional wear: ["saree", "kurti", "ethnic", "lehenga", "traditional"]
+  streetwear: ["streetwear", "sneakers", "denim", "street style"]
+  jewellery & accessories: ["jewellery", "jewelry", "accessories", "bag", "bags"]
+  product reviews: ["review", "reviews", "first impressions", "tried"]
+
+personalization:
+  max_attempts: 3
+
+sending:
+  delay_seconds: 5     # pause between live sends
+  max_per_run: 25
+  email_footer: "If you'd rather not hear from me, just reply \"no thanks\" and I won't contact you again."
