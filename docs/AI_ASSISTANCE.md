@@ -13,7 +13,7 @@ Instead I got: ERROR | YOUTUBE_API_KEY is not set
 My Python version is 3.11 and my OS is Windows.
 Please explain what went wrong in simple terms and give me the exact fix.
 
-*(Typos are in my original message. In short: complete the task without mistakes, and include a prompt/document showing that I took AI help, because the assignment asks for the prompt I used.)*
+
 
 ## What the assistant produced
 * Initial project architecture, code (`outreach/`), tests, `config.yaml`, README and this file.
