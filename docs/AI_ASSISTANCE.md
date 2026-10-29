@@ -5,7 +5,13 @@ I used **Claude (Anthropic)** as a coding assistant while building this assignme
 ## Prompt I gave the assistant (verbatim)
 Along with the full text of the assignment brief ("EDXSO AI Engineer Intern – Assignment 1: Automated Micro-Influencer Outreach System"), I wrote:
 
-> complete thi tak and pleae dont make any mitake and add ome other prompt hich ho i have taken your help here they are aking for my prompt that i have given you
+> I am working on the EDXSO influencer outreach project (Python, YouTube Data API,
+Claude API, SQLite). I am at this step: Step 7, running the pipeline.
+I ran: python main.py run-all
+I expected: it to search YouTube, collect metrics and create the CSV files.
+Instead I got: ERROR | YOUTUBE_API_KEY is not set
+My Python version is 3.11 and my OS is Windows.
+Please explain what went wrong in simple terms and give me the exact fix.
 
 *(Typos are in my original message. In short: complete the task without mistakes, and include a prompt/document showing that I took AI help, because the assignment asks for the prompt I used.)*
 
