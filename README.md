@@ -116,6 +116,3 @@ Each stage is also runnable alone: `discover`, `collect`, `enrich`, `filter`, `p
 
 ## 12. Scalability (50 → 500+)
 Stages are decoupled and idempotent; add more `queries` or raise `target_in_range`. ~500 in-range channels needs roughly 50 search pages (≈5,000 units) + 2 units per collected channel, i.e. 1–2 days of free quota (or request a quota extension). For scale, swap SQLite for Postgres, run `collect`/`personalize` in worker queues, and add more platform adapters beside `youtube.py`.
-
-## 13. AI assistance disclosure
-This project was built with the help of an AI assistant (Claude). The prompt I gave and how I used the output are documented in [`docs/AI_ASSISTANCE.md`](docs/AI_ASSISTANCE.md).
