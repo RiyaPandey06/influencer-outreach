@@ -2,3 +2,5 @@ requests>=2.31
 python-dotenv>=1.0
 PyYAML>=6.0
 pytest>=8.0
+streamlit>=1.39
+pandas>=2.2
